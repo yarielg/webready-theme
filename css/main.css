@@ -1,0 +1,76 @@
+
+
+/* Header Navigation   */
+@import url("header.css");
+
+/* HOME FRONT-PAGE CSS */
+@import url("front-page.css");
+
+/* Blog CSS */
+@import url("blog.css");
+
+/* Footer */
+@import url("footer.css");
+
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Varela Round', sans-serif;
+	
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+p{
+	color: #576366;
+	font-size: 15px;
+	line-height: 1.8;
+	margin: 0 auto;
+}
+
+.sz_box_shadow{
+	box-shadow: 0 1px 4px rgba(0,0,0,.4);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+/* Plugin themes customizations */
+/*Go Daddy Email Marketing Plugin*/
+.gem-form-wrapper input{
+	width: 60%;
+}
+
+p input.gem-submit{
+	background: #000;
+	color:#FFF;
+	border:0;
+	margin-top: 4px;
+}
+.gem-form-wrapper label{
+	font-size: 13px;
+}
+
+/* Widgets Styles */
+.post-content .sz-widget{
+	padding: 20px;
+	margin-bottom: 20px;
+	background: #edf4f7;
+	border-radius: 8px;
+}
+
+

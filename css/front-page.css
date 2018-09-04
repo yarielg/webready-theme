@@ -1,0 +1,98 @@
+/* VARIABLES CSS */
+:root{
+	--primary-color:#0686D8;
+}
+
+
+.banner__yariko h4.banner_header,
+.my-box-shadow h4,
+.my-box-shadow h5,.banner__yariko h3,
+.banner__yariko h5,
+ .section_icon_tematic h5,
+.section_icon_tematic h3,
+.section-people-says h3,
+.section-start-now h3{
+	color: var(--primary-color);
+}
+
+.ecommerce_solution h4,
+.ecommerce_solution h5,
+.ecommerce_solution p,
+.section-know-wordpress h3,
+.section-know-wordpress p{
+	color:#FFF;
+}
+
+.ecommerce_solution,
+ .section-know-wordpress{
+ 	background: var(--primary-color);
+ }
+
+.box_form{
+		background: #E9E3E6;
+		border-radius: 8px;
+}
+	
+.wrapper_flex_tech{
+ display: flex;
+ align-items: flex-end; 
+ flex-wrap: wrap;
+ justify-content: space-between;
+ padding:0;
+
+}
+
+.tech_content__yariko{
+	background: var(--primary-color);
+	transform: skewY(-2.5deg);
+	margin: 50px auto;
+	color: white;
+	align-self: center;
+	padding: 40px 0;
+	width: 100%;
+}
+
+.tech_content__yariko p{
+	color:#FFF;
+}
+
+.my-box-shadow{
+	box-shadow: 0 1px 4px rgba(0,0,0,.4);
+	border-radius: 6px;
+}
+
+img.logo-tech{
+	width:32px;
+	margin: 0 auto;
+}
+
+.unskew {
+	transform: skewY(2.5deg);
+}
+
+img.icon-tematic{
+	width: 40%;
+}
+
+.card{
+	border:0;
+	background: #E9E3E6;
+}
+
+
+/*********************** MEDIA QUERY ***************************/
+
+@media (min-width: 1024px){
+	img.logo-tech{
+		width:60px;
+		margin: 0 auto;
+	}
+	
+}
+
+@media (min-width: 768px){
+	img.logo-tech{
+		width:50px;
+		margin: 0 auto;
+	}
+}
