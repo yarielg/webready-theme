@@ -150,16 +150,16 @@
 	</div> 	
 </div>
 
-	<div class="container-fluid p-0 m-0">
+	<!--<div class="container-fluid p-0 m-0">
 		<img style="height:100%" class="img-fluid" src="<?php echo get_bloginfo('template_url') ?>/img/ocean-effect.jpg"/>
-	</div>
+	</div>-->
 
 <div class="section-people-says">
 	<div class="container p-3">
 		<div class="row p-2 aniview" data-av-animation="slideInUp">
 			
 			<div class="col-12 col-md-8 offset-md-1 my-auto text-center p-2">
-				<h3 class="text-center">The people says.</h3>
+				<h3 class="text-center">Nuestros Clientes dicen:</h3>
 				<p>
 				Web Ready is a relatively new company, with many talented people who make you feel very comfortable throughout the development process. I love your fresh ideas and the most important thing is that they have you in the smallest detail.</p>
 			</div>
@@ -175,9 +175,9 @@
 		<div class="row p-4">
 			<div class="col-md-3 col-1"></div>
 			<div class="col-md-6 col-10 text-center">
-				<h3 >Lets Get Started your project</h3>
-				<p>We will help you to achieve your goals and to grow your business.</p>
-				<a class="btn btn-info" href="#banner_home">Start Now!</a>
+				<h3 >Déjanos ocuparnos de su proyecto</h3>
+				<p>Le ayudaremos a lograr sus objetivos y hacer crecer su negocio.</p>
+				<a class="btn btn-info" href="#banner_home">Empieza Ahora!!!</a>
 			</div>
 			<div class="col-md-3 col-1"></div>
 		</div>

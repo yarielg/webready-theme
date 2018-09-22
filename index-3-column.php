@@ -11,7 +11,7 @@
 </section>
 <section>
 	<!-- Secondary Column -->
-				<div id="nav-list-categories" style="height: 30px;">
+				<div id="nav-list-categories" style="height: 43px;">
 					<?php
 					$args = array(
 					  'orderby' => 'name',
@@ -29,7 +29,7 @@
 						$category_id = get_cat_ID( $category->name );
 						$category_url = get_category_link( $category_id );
 						 ?>
-						<?php echo '<a href="'. $category_url .'">
+						<?php echo '<a class="badge badge-success" href="'. $category_url .'">
 					    
 					    ' . $category->name . '</a>	';
 					}

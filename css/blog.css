@@ -149,12 +149,13 @@ p.card-text {
     display: flex;
     justify-content:center ;
     padding: 9px;
-    font-size: 12px;
+    font-size: 14px;
     background: #CCC;
 }
 #nav-list-categories a{
-    padding: 3px 12px;
+    padding: 7px 12px;
     text-decoration: none;
+    margin-right: 3px;
 }
 
 @media screen and (min-width: 768px){

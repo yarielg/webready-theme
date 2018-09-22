@@ -66,9 +66,9 @@ function sb_theme_custom_styles() {
 	?>
 	<!--  MAIN NAV BAR -->
 		<style type="text/css">
-             header.main-header { background: <?php echo $sb_theme_options['bg_color_main_nav_bar']; ?>; }
-             .main-header li a, .main-header h1 a { color: <?php echo  $sb_theme_options['font_color_main_nav_bar']; ?>; }
-             header.main-header ul{ font-size: <?php echo $sb_theme_options['font_size_main_nav_bar'] ?>px }
+             #wr_navbar { background: <?php echo $sb_theme_options['bg_color_main_nav_bar']; ?>; }
+             ul#wr_main_menu li a { color: <?php echo  $sb_theme_options['font_color_main_nav_bar']; ?>; }
+              ul#wr_main_menu{ font-size: <?php echo $sb_theme_options['font_size_main_nav_bar'] ?>px !important; }
          </style>
 	<?php 
 

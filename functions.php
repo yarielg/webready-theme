@@ -1,4 +1,6 @@
 <?php 
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
 //Adding Custom Logo support to your Theme
 function sz_custom_logo_setup() {
@@ -22,6 +24,20 @@ add_action( 'after_setup_theme', 'sz_custom_logo_setup' );
 	}
 
 	add_action( 'wp_enqueue_scripts', 'wptt_theme_styles');
+
+//Parallelize downloads across hostnames for WordPress. 
+	/*function parallelize_hostnames($url, $id) {
+		 $hostname = par_get_hostname($url); //call supplemental function
+		 $url = str_replace(parse_url(get_bloginfo('url'), PHP_URL_HOST), $hostname, $url);
+		 return $url;
+}
+	function par_get_hostname($name) {
+		 $subdomains = array('static1.webreadynow.com','static2.webreadynow.com','static3.webreadynow.com'); //add your subdomains here, as many as you want.
+		 $host = abs(crc32(basename($name)) % count($subdomains));
+		 $hostname = $subdomains[$host];
+		 return $hostname;
+}
+add_filter('wp_get_attachment_url', 'parallelize_hostnames', 10, 2);*/
 
 //Adding the scripts for when wp_footer() being fired.		
 	function wptt_theme_js(){
