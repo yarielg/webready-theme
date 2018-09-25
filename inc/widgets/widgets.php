@@ -24,6 +24,6 @@ sz_create_widget( 'Post Bottom 3 Columns', 'post_bottom_3column', 'Display widge
 sz_create_widget( 'Top Page', 'top_page', 'Display widget on top of the page' );
 
 /*POST SINGLE*/
-sz_create_widget( 'Single Post Left', 'post_single_left', 'Display to the left in Single Post' );
+sz_create_widget( 'Right Post Left', 'post_single_left', 'Display to the right in Single Post' );
 
  ?>

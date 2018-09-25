@@ -1,4 +1,6 @@
 <?php 
+//remove the tag p of the description
+remove_filter('term_description','wpautop');
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
@@ -12,6 +14,7 @@ function sz_custom_logo_setup() {
         'header-text' => array( 'site-title', 'site-description' ),
     );
     add_theme_support( 'custom-logo', $defaults );
+
 }
 add_action( 'after_setup_theme', 'sz_custom_logo_setup' );
 
@@ -24,6 +27,10 @@ add_action( 'after_setup_theme', 'sz_custom_logo_setup' );
 	}
 
 	add_action( 'wp_enqueue_scripts', 'wptt_theme_styles');
+    
+    //Add image tu categories
+	add_theme_support('category-thumbnails');
+	add_theme_support( 'post-thumbnails' );
 
 //Parallelize downloads across hostnames for WordPress. 
 	/*function parallelize_hostnames($url, $id) {
@@ -66,5 +73,7 @@ include_once('inc/customizer_theme/footer.php');*/
 //Widgets
 include_once('inc/widgets/widgets.php');
 
+//Add extra fields to category taxonomy
+include_once('inc/category_fields/new_fields.php');
 
 

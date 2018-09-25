@@ -179,7 +179,7 @@ p.card-text {
 
 /* Page Layout page.php */
 @media screen and (min-width: 1025px){
-    .page-template,#jumbotron,#banner_home{
+    .page-template,#banner_home{
         padding-top: 99px !important;
     }
 }

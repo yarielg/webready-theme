@@ -39,7 +39,13 @@
 				<p class="content-post "><?php the_content() ; ?></p>
 			</div>
 
-			
+			<!-- Post Bottom Widget 3 column -->
+	    	<?php if ( is_active_sidebar( 'post_bottom_3column' ) ) : ?>
+				<div class="col-12" >
+        			<?php dynamic_sidebar( 'post_bottom_3column' ); ?>
+        		</div>
+						
+			<?php endif; ?>	
 	     
 	    </div>
 	    <div class="col-lg-4">
@@ -51,16 +57,6 @@
 						
 			<?php endif; ?>	
 	    </div>
-	  </div>
-
-	  <div class="row">	
-		<!-- Post Bottom Widget 3 column -->
-	    	<?php if ( is_active_sidebar( 'post_bottom_3column' ) ) : ?>
-				<div class="col-12" >
-        			<?php dynamic_sidebar( 'post_bottom_3column' ); ?>
-        		</div>
-						
-			<?php endif; ?>	
 	  </div>
 
 	  <div class="row">	

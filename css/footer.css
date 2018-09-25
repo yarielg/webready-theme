@@ -28,8 +28,14 @@ footer#main_footer{
 	font-size: 15px;
 	font-weight: 600;
 }
-
-
+.sz-widget h3{
+	font-size: 15px;
+	text-align: center;
+}
+.sz-widget p{
+	font-size: 13px;
+	
+}
 /*Linea debajo de widget title*/
 .sz-widget-heading:after{
 	content:"";
@@ -40,6 +46,9 @@ footer#main_footer{
 	margin-top: 10px;
 }
 
+#cabecera_img_author img{
+	border-radius: 50% !important;
+}
 
 footer .footer-copyright p{
 	font-size: 11px;
