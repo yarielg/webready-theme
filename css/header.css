@@ -1,9 +1,9 @@
 /* Top Header */
-header.top_header{
-	height: 50px;
-	flex-direction: row;
-	justify-content: space-between; 
-}
+	header.top_header{
+		height: 50px;
+		flex-direction: row;
+		justify-content: space-between; 
+	}
 
 ul.top_rigth_menu{
  margin: auto 0;
@@ -35,7 +35,7 @@ header.main-header{
 }
 
 .header-wrapper #header-logo{
-	height: 50px;
+	height: 35px;
 	margin: 8px 0;
 }
 
@@ -60,7 +60,10 @@ ul#wr_main_menu{
 ul#wr_main_menu li a:hover{
 	color:black;
 }
-
+/*boostrap hover menu class*/
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
 
 /****************************************************************
 ************************ MEDIA QUERIES *************************/

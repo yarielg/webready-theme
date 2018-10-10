@@ -36,7 +36,14 @@ if (isset($cat_data['img']) && isset($cat_data['background_color']) && isset($ca
 </section>
 <section>
     <!-- Secondary Column -->
-                <div id="nav-list-categories" style="height: 43px;">
+                  <nav id="category-navbar" class="navbar navbar-expand-md navbar-light bg-light">
+                    <div class="container">
+                    <a class="navbar-brand" href="#">Categorías</a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
                     <?php
                     $args = array(
                       'orderby' => 'name',
@@ -54,18 +61,24 @@ if (isset($cat_data['img']) && isset($cat_data['background_color']) && isset($ca
                         $category_id = get_cat_ID( $category->name );
                         $category_url = get_category_link( $category_id );
                          ?>
-                        <?php echo '<a class="badge badge-success" href="'. $category_url .'">
-                        
-                        ' . $category->name . '</a> ';
+                        <?php if( get_cat_name($cat_id)==$category->name ){
+                            echo '<li class="nav-item active"><a class="nav-link" href="'.$category_url.'">'.$category->name .'</a></li>';
+                        }else{
+                            echo '<li class="nav-item"><a class="nav-link" href="'.$category_url.'">'.$category->name .'</a></li>';
+                        }
                     }
                     ?>
+                        </ul>
+                    </div>
                 </div>
+                    </nav>
+    
 </section>
  <div class="container blog">
     
     <div class="row px-md-5">
          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <article class="col col-md-6 col-lg-4">
+        <article class="col-12 col-sm-6 col-lg-4">
             <a href="<?php the_permalink(); ?>">
                 <div class="card post"> 
                 <div class="author_post">

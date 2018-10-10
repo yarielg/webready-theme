@@ -49,3 +49,9 @@ function extra_category_fields( $tag ) {    //check for existing featured ID
             update_option( "category_$t_id", $cat_meta );
         }
     }
+
+    
+
+
+
+

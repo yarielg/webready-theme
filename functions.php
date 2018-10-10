@@ -76,4 +76,5 @@ include_once('inc/widgets/widgets.php');
 //Add extra fields to category taxonomy
 include_once('inc/category_fields/new_fields.php');
 
-
+//Custom Pos Type
+include_once('inc/cpt/custom_post.php');

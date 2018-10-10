@@ -17,13 +17,14 @@
 	box-sizing: border-box;
 }
 
-body{
-	font-family: 'Varela Round', sans-serif;
+body,a,p,h1,h2,h3,h4,h5,button,article{
+	font-family: 'Varela Round', sans-serif !important;;
 	
 }
 
 a{
-	text-decoration: none;
+	text-decoration: none !important;
+
 }
 
 li{
@@ -35,6 +36,10 @@ p{
 	font-size: 15px;
 	line-height: 1.8;
 	margin: 0 auto;
+}
+
+button, input,textarea{
+	border-radius: 8px !important;
 }
 
 .sz_box_shadow{
@@ -73,4 +78,8 @@ p input.gem-submit{
 	border-radius: 8px;
 }
 
+#category-navbar ul{
+	margin: auto !important;
+	text-align: center;
+}
 

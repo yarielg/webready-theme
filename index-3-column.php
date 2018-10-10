@@ -1,4 +1,3 @@
-<?php get_header(); ?>
 <?php global $sb_theme_options; ?>
 
 <section id="jumbotron">
@@ -63,5 +62,3 @@
  		<?php endif; ?>
  	</div>
 </div>
-
-<?php get_footer(); ?>

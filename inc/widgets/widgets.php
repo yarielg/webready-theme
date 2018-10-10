@@ -26,4 +26,7 @@ sz_create_widget( 'Top Page', 'top_page', 'Display widget on top of the page' );
 /*POST SINGLE*/
 sz_create_widget( 'Right Post Left', 'post_single_left', 'Display to the right in Single Post' );
 
+/*Portfolio-single*/
+sz_create_widget( 'Single Portfolio Bottom', 'portfolio_bottom', 'Display on bottom in Single Portfolio' );
  ?>
+

@@ -177,10 +177,4 @@ p.card-text {
 	}
 }
 
-/* Page Layout page.php */
-@media screen and (min-width: 1025px){
-    .page-template,#banner_home{
-        padding-top: 99px !important;
-    }
-}
 
